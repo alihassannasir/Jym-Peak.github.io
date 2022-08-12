@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+    background-color: rebeccapurple;
+    background-image: url('./IMAGES/26.png');
+}
+
+body a{
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+header a {
+    cursor: pointer;
+    text-shadow: 1px 1px orangered;
+
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: orangered;
+}
+
+.btn:hover {
+    background-color: orangered;
+    border: 2px solid white;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+header .logo a img {
+    padding-top: .3rem;
+}
+
+header .logo h1 {
+    font-size: 1rem;
+    text-shadow: 1px 1px orangered;
+    padding: .1rem .4rem;
+    border-radius: .3rem;
+}
+
+header .logo h1:hover {
+    text-shadow: 0px 0px white;
+    background-color: white;
+}
+
+header .logo h1:hover {
+    color: orangered;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 1.5rem;
+}
+
+.navbar ul li a {
+    padding: 0.1rem 0.78rem;
+}
+
+.navbar ul li a:hover {
+    color: orangered;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+#frntbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2em;
+}
+
+#frntbtn button {
+    margin: 0.4rem 0.3rem;
+    padding: 0.2rem 0.6rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+section .text {
+    width: 45%;
+    height: 60vh;
+    text-align: center;
+    padding: 0rem 2.5rem;
+    padding-top: 4rem;
+}
+
+section .text h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px orangered;
+}
+
+section .form {
+    border: 4px solid orangered;
+    border-radius: 1em;
+    padding: 1em 0em;
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .form form {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .form h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px orangered;
+}
+
+section .form form {
+    width: 80%;
+    height: 95%;
+}
+
+section .form form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem .6rem;
+}
+
+section .form form input {
+    width: 80%;
+}
+
+.text .btn {
+    margin: .8rem .3rem;
+    padding: .3rem 1rem;
+}
+
+.text .btn1 {
+    background-color: orangered;
+    color: white;
+    border: 2px solid white;
+}
+
+.text .btn1:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.button {
+    display: flex;
+    width: 24em;
+    justify-content: space-between;
+    margin-left: 6em;
+}
+
+.button button {
+    margin: .5em .5em;
+    padding: .3em .3em;
+    width: 100%;
+}
+
+/* ------------------------------------------------------RESPONSIVE ---------------------------------------------------------------------*/
+
+@media screen and (min-width: 950px) and (max-width:1315px) {
+
+    .navbar ul li {
+        list-style-type: none;
+        margin: 1.5rem 0.5rem;
+    }
+
+    .navbar ul li a {
+        padding: 0.1rem 0.1rem;
+    }
+
+    section .form form input {
+        width: 75%;
+    }
+
+    .button {
+        display: flex;
+        width: 14em;
+        justify-content: space-between;
+        margin-left: 3em;
+    }
+
+    .button button {
+        margin: .5em .4em;
+        padding: .3em .2em;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width:950px) {
+
+    header .logo a img {
+        padding-top: .1rem;
+    }
+
+    header .logo h1 {
+        font-size: 1rem;
+        text-shadow: 1px 1px orangered;
+        padding: .1rem .4rem;
+        border-radius: .3rem;
+    }
+
+    header .logo h1:hover {
+        text-shadow: 0px 0px white;
+        background-color: white;
+    }
+
+    header .logo h1:hover {
+        color: orangered;
+    }
+
+    .navbar ul li {
+        list-style-type: none;
+        margin: 1.25rem 0.2rem;
+    }
+
+    .navbar ul li a {
+        padding: 0.1rem 0.01rem;
+        font-size: 0.8rem;
+
+    }
+    section .form h1 {
+        font-size: 2rem;
+    }
+    
+    section .form form div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem .2rem;
+    }
+
+    section .form form input {
+        width: 70%;
+    }
+
+    #addr{
+        margin-right: .4rem;
+    }
+
+    .button {
+        display: flex;
+        width: 14em;
+        justify-content: space-between;
+        margin-left: 3em;
+    }
+
+    .button button {
+        margin: .5em .4em;
+        padding: .3em .2em;
+        width: 100%;
+    }
+}
